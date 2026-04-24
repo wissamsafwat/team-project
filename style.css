@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+flex: 1;
+}
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+#navigation{
+    text-align: left;
+}
