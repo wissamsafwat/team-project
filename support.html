@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game website-About Team</title>
+    <title>game website-support</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about_team.css">
+    <link rel="stylesheet" href="support.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <a href="profile.html">
                 <i class="fa-solid fa-user"></i>
             </a>
-            <h2>About Our Team</h2>
+            <h2>Support</h2>
             <a href="cart.html">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a> 
@@ -24,15 +24,6 @@
     <div id="global">
         <nav id="navigation">
                 <ul>
-                    <li>
-                        <a href="profile.html">
-                            <i class="fa-solid fa-user"></i>
-                            <span>Profile</span>
-                        </a>
-                    </li>
-            
-                    <hr color="#555">
-
                     <li>
                         <a href="index.html">
                             <i class="fa-solid fa-house"></i>
@@ -95,56 +86,70 @@
                     </li>
                 </ul>
             </nav>
+
+
         <main>
-            <img src="im.png" width="280" height="150">
-            <div class="gp">
-            <div class="card">
-                <h3><img src="image.png" width="50">Name:Joly Michael</h3>
-                <h3>ID No:20250266</h3>
-                <h3>Page:about team</h3>
+           
+            <section id="welcome">
+            <h2>LEVEL UP WITH OUR SUPPORT!</h2>
+            <img id="support_img" src="https://www.wowcustomersupport.com/wp-content/uploads/2021/10/Main-image-1024x991.png " width="200">
+            </section>
+
+            <hr color="#555">
+
+            <div>
+                <h4>For any questions,please fill this form!</h4>
             </div>
-              <div class="card">
-                <h3><img src="image.png" width="50">Name:Joyce Talaat</h3>
-                <h3>ID No:20250277</h3>
-                 <h3>Page:profile</h3>
-            </div>
-              <div class="card">
-                <h3><img src="image.png" width="50">Name:Beshoy Emad</h3>
-                <h3>ID No:20250217</h3>
-                 <h3>Page:store</h3>
-            </div>
-              <div class="card">
-                <h3><img src="image.png" width="50">Name:Bavly Mamdoh</h3>
-                <h3>ID No:20250190</h3>
-                 <h3>Page:compare</h3>
+
+            <form id="contactForm" action="https://formspree.io/f/myklvvyr" method="post">
+                <div>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your name" name="username">
                 </div>
-               <div class="card">
-                <h3><img src="image.png" width="50">Name:Demiana Malak</h3>
-                <h3>ID No:20250347</h3>
-                 <h3>Page:support</h3>
+
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Enter your email" name="email">
+                </div>
+                
+                <div>
+                    <label>Leave us your problem!</label>
+                    <input type="text" placeholder="write here" name="problem">
+                </div>
+
+                <div>
+                    <button type="submit">send</button>
+                </div>
+            </form>
+            <hr color="#555">
+
+
+            <h3>Contact info</h3>
+            <div class="info-item">
+            <i class="fa-solid fa-phone"></i> <a href="tel:01282584008">Call Us</a>
             </div>
-               <div class="card">
-                <h3><img src="image.png" width="50">Name:Meriam George</h3>
-                <h3>ID No:20251120</h3>
-                 <h3>Page:home</h3>
+
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:demianamalak23@gmail.com?subject=Support%20Message">Our Mail</a>
             </div>
-               <div class="card">
-                <h3><img src="image.png" width="50">Name:Wissam Safwat</h3>
-                <h3>ID No:20251180</h3>
-                 <h3>Page:library</h3>
+
+            <div class="info-item">
+                <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/Capital.edu.eg1?__cft__[0]=AZYTBmdl0ZLpbVJCiju-bpNl62D5y2t2AOoTU4Mpx6gIxmbqAqCu_ZXXHdL8nqr28PHWjYJxFXGmxgc3Q_YKCQACSLkxWkm4jU4lEo-mrQyX8eORk-AzpLNUINaPcgsd51i3WA6zsMfVNFwrHmGpzB-doEvZHWAv2O3AZwD4dvvzCM-2VzrS-_heJhIlOEqAMVI&__tn__=-UC%2CP-R  ">Our Facebook</a>
             </div>
-               <div class="card">
-                <h3><img src="image.png" width="50">Name:Kerolous Magdy</h3>
-                <h3>ID No:20250786</h3>
-                 <h3>Page:cart</h3>
+
+            <div class="info-item">
+            <i class="fa-brands fa-github"></i>  <a href=" https://github.com/wissamsafwat/team-project">Our Github</a>
             </div>
-            </div>
+
         </main>
     </div>
+
     <footer>
         <hr color="#555">
         &copy;2026 FCAI-Capital university. <br>
         electronics game website. All rights reserved.
     </footer>
+    <script src="support.js"></script>
 </body>
 </html>
