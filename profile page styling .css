@@ -27,6 +27,7 @@ button {
     font-weight: bold;
     border: none;
     transition: 0.2s;
+
      
 }
 
@@ -37,7 +38,7 @@ button {
 .add-account:hover{
    background-color:rgb(236, 74, 46);
    margin:0.05cm;
-
+    
 }
 .logout{
    color:white;
@@ -95,4 +96,9 @@ input, select {
      color:#fff;
 
 
+}
+p{
+   color: #fff;
+   background-color: #0e0e0e;
+   font-size:small;
 }
