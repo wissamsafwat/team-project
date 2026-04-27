@@ -1,0 +1,176 @@
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d10; /* deep black */
+    color: #e6e6e6;
+}
+
+/* HEADER */
+header {
+    background-color: #111116;
+    padding: 15px;
+    border-bottom: 1px solid #222;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head h2 {
+    color: #ffffff;
+}
+
+#head i {
+    color: #e63946; /* soft red accent */
+    font-size: 20px;
+}
+
+/* LAYOUT */
+#global {
+    display: flex;
+}
+
+/* SIDEBAR */
+#navigation {
+    width: 220px;
+    background-color: #111116;
+    min-height: 100vh;
+    padding-top: 20px;
+    border-right: 1px solid #222;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation li {
+    padding: 14px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #ccc;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#navigation a:hover {
+    color: #e63946;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* PROFILE */
+.profile-container {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* PROFILE PIC */
+.left-side {
+    width: 160px;
+}
+
+#profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#profilePic:hover {
+    border-color: #e63946;
+    transform: scale(1.03);
+}
+
+/* FORM */
+form {
+    flex: 1;
+    background-color: #16161d;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+/* TEXT */
+p strong {
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+    background-color: #0f0f14;
+    color: #fff;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #e63946;
+}
+
+/* BUTTONS */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
+}
+
+/* PRIMARY BUTTON */
+.add-account {
+    background-color: #e63946;
+    color: white;
+}
+
+.add-account:hover {
+    background-color: #c92a36;
+}
+
+/* SECONDARY BUTTON */
+.logout {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: #ccc;
+}
+
+.logout:hover {
+    border-color: #e63946;
+    color: #e63946;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111116;
+    color: #777;
+    border-top: 1px solid #222;
+}
