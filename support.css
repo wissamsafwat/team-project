@@ -1,0 +1,63 @@
+button{
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 30px;
+    width: fit-content; /* 34an mykbrsh 3an el kalam ele gwah*/
+    border: none;
+}
+
+
+button:hover{
+    background-color: navy ;
+    transform: scale(1.05);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius:6px;
+    border: 1.5px solid indianred;
+    display: block;  /*new line*/
+    background-color: white;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;  
+    gap: 15px;     /*icon and link*/       
+    margin-bottom: 15px;
+}
+
+.info-item a{
+  color: white;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+    color: navy;       
+}
+
+.fa-phone { color: green; }     
+.fa-envelope { color: red; }   
+.fa-facebook { color: blue ; }   
+.fa-github { color: grey; }
+
