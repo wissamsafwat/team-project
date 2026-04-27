@@ -1,19 +1,18 @@
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     let user = {
-        gamerTag: "Player123",
-        email: "player@example.com",
-        password: "********"
+        gamerTag: localStorage.getItem('gamerTag') || "Player123",
+        email: localStorage.getItem('email') || "player@example.com",
+        password: localStorage.getItem('pass') || "********"
     };
 
-    const gamerTagEl = document.querySelector(".gamer-tag");
-    const emailEl = document.querySelector(".email");
-    const passwordEl = document.querySelector(".password");
+    const gamerTagEl = document.querySelector("#gamer-tag");
+    const emailEl = document.querySelector("#email");
+    const passwordEl = document.querySelector("#password");
 
-    const changeEmailBtn = document.querySelector(".change-email");
-    const changePasswordBtn = document.querySelector(".change-password");
-    const logoutBtn = document.querySelector(".logout");
-    const addAccountBtn = document.querySelector(".add-account");
+    const changeEmailBtn = document.querySelector("#change-email");
+    const changePasswordBtn = document.querySelector("#change-password");
+    const logoutBtn = document.querySelector("#logout");
 
     function displayUser() {
         gamerTagEl.textContent = user.gamerTag;
@@ -23,26 +22,30 @@
 
     changeEmailBtn.addEventListener("click", () => {
         let newEmail = prompt("Enter new email:");
-        if (newEmail) {
+        if (newEmail && newEmail.trim() !== "") {
             user.email = newEmail;
+            localStorage.setItem('email', newEmail);
             displayUser();
         }
     });
 
     changePasswordBtn.addEventListener("click", () => {
         let newPassword = prompt("Enter new password:");
-        if (newPassword) {
+        if (newPassword && newPassword.trim() !== "") {
             user.password = newPassword;
+            localStorage.setItem('pass' , newPassword);
             displayUser();
         }
     });
 
     logoutBtn.addEventListener("click", () => {
-        alert("Logged out!");
-    });
-
-    addAccountBtn.addEventListener("click", () => {
-        alert("Add account feature coming soon!");
+        if(confirm("are you sure you want to logout?")){
+            localStorage.removeItem('email');
+            localStorage.removeItem('pass');
+            alert("Logged out!");
+            window.location.href = "index.html";
+        }
+        
     });
 
     displayUser();

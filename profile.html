@@ -6,7 +6,7 @@
     <title>game website-profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="page-name.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <header>
@@ -87,28 +87,39 @@
                 </ul>
             </nav>
         <main>
-            <i class="fa-solid fa-user"></i>     
-                <h3><strong>Gamer Tag:</strong></h3>
-                   <p class="gamer-tag"></p>
-               <h3><strong>Email:</strong></h3>
-                   <p class="email"></p>
-              <button class="change-email">Change Email</button>
-              <h3><strong>Password:</strong></h3>
-                   <p class="password"></p>
-              <button class="change-password">Change Password</button>
-              <h3><strong>Status:</strong> online </h3>
-              <h3><strong>Server:</strong></h3>
-                 <select>
-                      <option value="me"> Middle East</option>
-                      <option value="eu"> Europe (EU)</option>
-                      <option value="na">🇺🇸 North America (NA)</option>
-                      <option value="asia">Asia</option>
-                      </select>
-<div>
-    <button class="add-account">Add Account</button>
-    <button class="logout">Log Out</button>
-</div>
- </main>
+            <section id="profile_pic">
+                <i class="fa-solid fa-user"></i>
+                <h3><strong>Status:</strong> online </h3>
+            </section>
+            
+
+            <hr color="#555">
+
+            <h3><strong>Gamer Tag:</strong></h3>
+            <p id ="gamer-tag"></p>
+
+            <h3><strong>Email:</strong></h3>
+            <p id="email"></p>
+
+            <button id="change-email">Change Email</button>
+
+            <h3><strong>Password:</strong></h3>
+            <p id="password"></p>
+
+            <button id="change-password">Change Password</button>
+
+            
+            <h3><strong>Server:</strong></h3>
+            <select>
+                <option value="me"> Middle East</option>
+                <option value="eu"> Europe (EU)</option>
+                <option value="na">🇺🇸 North America (NA)</option>
+                <option value="asia">Asia</option>
+            </select>
+            <div>
+                <button id="logout">Log Out</button>
+            </div>
+        </main>
     </div>
     <footer>
         <hr color="#555">
