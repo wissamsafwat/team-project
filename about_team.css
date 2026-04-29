@@ -24,8 +24,8 @@ main > img{
 }
 
 .card:hover{
-    box-shadow: 0px 8px 16px rgb(78, 75, 75);
-    transform: translateY(-5px);
+    box-shadow: 0px 2px 20px tomato;
+    transform: translateY(-3px);
 }
 
 .left img{
