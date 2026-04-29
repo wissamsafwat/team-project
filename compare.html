@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game website-compare</title>
+    <title>game website-home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="page-name.css">
+    <link rel="stylesheet" href="compare.css">
 </head>
+
 <body>
     <header>
         <section id="head">
@@ -17,77 +20,128 @@
             <h2>Compare</h2>
             <a href="cart.html">
                 <i class="fa-solid fa-cart-shopping"></i>
-            </a> 
+            </a>
         </section>
         <hr color="#555">
     </header>
     <div id="global">
         <nav id="navigation">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="my_library.html">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>My Library</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="my_library.html">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>My Library</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="store.html">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <span>Store</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="store.html">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Store</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="compare.html">
-                            <i class="fa-solid fa-right-left"></i>
-                            <span>Compare</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="compare.html">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>Compare</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="community.html">
-                            <i class="fa-solid fa-users"></i>
-                            <span>Community</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="community.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Community</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="support.html">
-                            <i class="fa-solid fa-headset"></i>
-                            <span>Support</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="support.html">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Support</span>
+                    </a>
+                </li>
 
-                    <hr color="#555">
+                <hr color="#555">
 
-                    <li>
-                        <a href="about_team.html">
-                            <i class="fa-solid fa-address-card"></i>
-                            <span>About Team</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <li>
+                    <a href="about_team.html">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>About Team</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <main>
-            
+            <div class="specs-table-container">
+                <div class="comparison-header-row">
+                    <div class="header-cell spec-label-head">
+                        <h1>Game photo</h1>
+                    </div>
+
+                    <div class="header-cell">
+                        <div class="search-wrapper">
+                            <label>COMPARE WITH</label>
+                            <input type="text" id="search-game-1" placeholder="Search...">
+                            <div class="search-results" id="results-1"></div>
+                        </div>
+                        <div class="image-placeholder">
+                            <img id="img-game-1" src="" style="display: none;" alt="Game 1">
+                        </div>
+                    </div>
+
+                    <div class="header-cell">
+                        <div class="search-wrapper">
+                            <label>COMPARE WITH</label>
+                            <input type="text" id="search-game-2" placeholder="Search...">
+                            <div class="search-results" id="results-2"></div>
+                        </div>
+                        <div class="image-placeholder">
+                            <img id="img-game-2" src="" style="display: none;" alt="Game 2">
+                        </div>
+                    </div>
+                </div>
+
+                <table class="compare-table">
+                    <tr>
+                        <td class="spec-label">Price $</td>
+                        <td id="price-game-1">-</td>
+                        <td id="price-game-2">-</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Rating <i class="fa-solid fa-star"></i></td>
+                        <td id="rating-game-1">-</td>
+                        <td id="rating-game-2">-</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Requirements</td>
+                        <td id="req-game-1">-</td>
+                        <td id="req-game-2">-</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Storage Required</td>
+                        <td id="storage-game-1">-</td>
+                        <td id="storage-game-2">-</td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </div>
     <footer>
@@ -95,5 +149,7 @@
         &copy;2026 FCAI-Capital university. <br>
         electronics game website. All rights reserved.
     </footer>
+    <script src="compare.js"></script>
 </body>
+
 </html>
