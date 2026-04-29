@@ -8,60 +8,50 @@
     margin-left: -50px;
 }
 #profile_pic h3{
-    margin-left: -40px;
+    margin-left: 50px;
 }
 .fa-user {
   display: block;
   font-size: 170px;  
-  margin-bottom: 20px; /* space between icon and form */
-}
-form {
-    flex: 1;
-    background-color: #0e0e0e;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #222;
 }
 h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: large;
   
 }
-button {
+.buttons{
     flex: 1;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     border: none;
-    transition: 0.2s;
-     
+    transition: 0.2s;   
 }
 
 #logout{
-    color:white;
-    background-color:tomato; 
-   
+    color:var(--text-color);
+    background-color:var(--hover-icon);
 }
 
 #logout:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px);
 }
 #change-email{
-    color:white;
-    background-color:tomato; 
+    color:var(--text-color);
+    background-color:var(--hover-icon); 
 }
 #change-email:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px);
 }
 #change-password{
-   color:white;
-   background-color:tomato; 
+   color:var(--text-color);
+   background-color:var(--hover-icon); 
 }
 #change-password:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px); 
 }
 input, select {
@@ -78,22 +68,31 @@ input, select {
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e ;
-    color:#fff;
+    color:var(--color);
 }
 #email{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:#fff;
+    color:var(--color);
 }
 #password{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:#fff;
+    color:var(--color);
 }
 p{
-    color: #fff;
+    color: var(--text-color);
     background-color: #0e0e0e;
     font-size:small;
+}
+#icon_1{
+    color:var(--icon-color);
+}
+#status{
+    color: var(--text-color);
+}
+.h3_3{
+    color: var(--text-color);
 }

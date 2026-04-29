@@ -11,20 +11,21 @@ main{
     width: 100%; 
 }
 
-button{
-    background-color: white;
-    color: black;
+.submit_button{
+    background-color:var(--hover-icon);
+    color:var(--text-color);
     margin-top: 5px;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 30px;
     width: fit-content; /* 34an mykbrsh 3an el kalam ele gwah*/
     border: none;
+    color: var(--secondty-color);
+    
 }
 
 
-button:hover{
-    background-color: navy ;
+.submit_button:hover{
     transform: scale(1.05);
 }
 
@@ -42,7 +43,7 @@ input {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius:6px;
-    border: 1.5px solid indianred;
+    border: 1.5px solid var(--hover-icon);
     display: block;  /*new line*/
     background-color: white;
     font-weight: bold;
@@ -56,15 +57,24 @@ input {
 }
 
 .info-item a{
-  color: white;
+  color:var(--text-color);
   text-decoration: none;
 }
 
 .info-item a:hover {
-    color: navy;       
+    color:var(--hover-icon);       
 }
 
 .fa-phone { color: green; }     
 .fa-envelope { color: red; }   
 .fa-facebook { color: blue ; }   
 .fa-github { color: grey; }
+label{
+    color: var(--text-color);
+}
+.h4_1{
+    color: var(--text-color);
+}
+.h3_2{
+    color: var(--text-color);
+}

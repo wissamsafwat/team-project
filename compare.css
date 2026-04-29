@@ -12,7 +12,7 @@ display:block;
 .comparison-header-row {
     display: flex;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color:var(--background-color);
     border: 1px solid #333;
     height: 100vh;
 }
@@ -28,7 +28,7 @@ display:block;
 
 .spec-label-head {
     flex: 0 0 25%;
-    background-color: #161616;
+    background-color:var(--background-color);
 }
 
 /* السيرش والقايمة */
@@ -36,7 +36,7 @@ display:block;
     position: relative;
     width: 100%;
     max-width: 300px;
-    background: #222;
+    background:var(--background-color);
     padding: 8px 12px;
     border: 1px solid #444;
     margin-bottom: 25px;
@@ -46,7 +46,7 @@ display:block;
 .search-wrapper label {
     display: block;
     font-size: 10px;
-    color: #ff5722;
+    color:var(--text-color);
     margin-bottom: 4px;
     font-weight: bold;
 }
@@ -55,7 +55,7 @@ display:block;
     width: 100%;
     background: transparent;
     border: none;
-    color: #fff;
+    color: var(--text-color);
     outline: none;
     font-size: 16px;
 }
@@ -65,7 +65,7 @@ display:block;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #222;
+    background-color: var(--background-color);
     border: 1px solid #444;
     border-top: none;
     border-radius: 0 0 8px 8px;
@@ -78,22 +78,22 @@ display:block;
 
 .search-result-item {
     padding: 12px 15px;
-    color: #ddd;
+    color: var(--text-color);
     cursor: pointer;
     border-bottom: 1px solid #333;
     font-size: 14px;
 }
 
 .search-result-item:hover {
-    background-color: #ff5722;
-    color: #fff;
+    background-color:var(--hover-icon);
+    color:var(--text-color);
 }
 
 /* الصور */
 .image-placeholder {
     width: 100%;
     height: 100%;
-    background-color: #111;
+    background-color:var(--background-color);
     border: 1px solid #333;
     border-radius: 8px;
     display: flex;
@@ -112,7 +112,7 @@ display:block;
 .compare-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #111;
+    background-color:var(--background-color);
     border: 1px solid #333;
     border-top: none;
     table-layout: fixed;
@@ -121,19 +121,19 @@ display:block;
 .compare-table td {
     padding: 20px;
     border: 1px solid #222;
-    color: #eee;
+    color:var(--text-color);
     text-align: center;
 }
 
 .spec-label {
     width: 25%;
     text-align: left !important;
-    background-color: #161616;
+    background-color:var(--background-color);
     font-weight: bold;
-    color: #888;
+    color:var(--text-color);
 }
 .header-cell{
-    color: white;
+    color:var(--text-color);
     justify-content: center;
     display: flex;
 }
