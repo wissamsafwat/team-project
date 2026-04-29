@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game website-profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <section id="head">
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <h2>Profile</h2>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a> 
+        </section>
+        <hr color="#555">
+    </header>
+    <div id="global">
+        <nav id="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="my_library.html">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>My Library</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="store.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Store</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="compare.html">
+                            <i class="fa-solid fa-right-left"></i>
+                            <span>Compare</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="community.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Community</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="support.html">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Support</span>
+                        </a>
+                    </li>
+
+                    <hr color="#555">
+
+                    <li>
+                        <a href="about_team.html">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span>About Team</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <main>
+            <section id="profile_pic">
+                <i class="fa-solid fa-user"></i>
+                <h3><strong>Status:</strong> online </h3>
+            </section>
+            
+
+            <hr color="#555">
+
+            <h3><strong>Gamer Tag:</strong></h3>
+            <p id ="gamer-tag"></p>
+
+            <h3><strong>Email:</strong></h3>
+            <p id="email"></p>
+
+            <button id="change-email">Change Email</button>
+
+            <h3><strong>Password:</strong></h3>
+            <p id="password"></p>
+
+            <button id="change-password">Change Password</button>
+
+            
+            <h3><strong>Server:</strong></h3>
+            <select>
+                <option value="me"> Middle East</option>
+                <option value="eu"> Europe (EU)</option>
+                <option value="na">🇺🇸 North America (NA)</option>
+                <option value="asia">Asia</option>
+            </select>
+            <div>
+                <button id="logout">Log Out</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <hr color="#555">
+        &copy;2026 FCAI-Capital university. <br>
+        electronics game website. All rights reserved.
+    </footer>
+    <script src="profilejava.js"></script>
+</body>
+</html>
