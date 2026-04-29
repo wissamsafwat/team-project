@@ -8,13 +8,14 @@
     margin-left: -50px;
 }
 #profile_pic h3{
-    margin-left: -40px;
+    margin-left: 50px;
 }
 .fa-user {
   display: block;
   font-size: 170px;  
   margin-bottom: 20px; /* space between icon and form */
 }
+
 form {
     flex: 1;
     background-color: #0e0e0e;
