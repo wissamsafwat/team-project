@@ -1,3 +1,24 @@
+#search_container{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#search{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    border: 2px solid var(--hover-icon);
+}
+#seach:focus{
+    outline: none;
+    border: 2px solid var(--hover-icon);
+    box-shadow: 0 2px 20px var(--hover-icon);
+}
 .card {
     display: flex;
     flex-direction: column;
