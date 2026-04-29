@@ -28,41 +28,39 @@ h3{
   font-size: large;
   
 }
-button {
+.buttons{
     flex: 1;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     border: none;
-    transition: 0.2s;
-     
+    transition: 0.2s;   
 }
 
 #logout{
-    color:white;
-    background-color:tomato; 
-   
+    color:var(--text-color);
+    background-color:var(--hover-icon);
 }
 
 #logout:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px);
 }
 #change-email{
-    color:white;
-    background-color:tomato; 
+    color:var(--text-color);
+    background-color:var(--hover-icon); 
 }
 #change-email:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px);
 }
 #change-password{
-   color:white;
-   background-color:tomato; 
+   color:var(--text-color);
+   background-color:var(--hover-icon); 
 }
 #change-password:hover{
-    background-color:rgb(236, 74, 46);
+    background-color:var(--darker);
     transform: translateY(-5px); 
 }
 input, select {
@@ -79,22 +77,31 @@ input, select {
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e ;
-    color:#fff;
+    color:var(--color);
 }
 #email{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:#fff;
+    color:var(--color);
 }
 #password{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:#fff;
+    color:var(--color);
 }
 p{
-    color: #fff;
+    color: var(--text-color);
     background-color: #0e0e0e;
     font-size:small;
+}
+#icon_1{
+    color:var(--icon-color);
+}
+#status{
+    color: var(--text-color);
+}
+.h3_3{
+    color: var(--text-color);
 }
