@@ -1,0 +1,25 @@
+#global{
+    display: flex;
+}
+main{
+    flex: 1;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.hero{
+    font-size: larger;
+    display: block;
+    font-weight: bold;
+}
+video{
+    width: 700px;
+    height: 400px;
+}
+.about{
+    text-align: left;
+    font-weight:bold;
+    font-size: large;
+}
