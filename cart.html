@@ -6,7 +6,7 @@
     <title>game website-cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="page-name.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <header>
@@ -14,6 +14,7 @@
             <a href="profile.html">
                 <i class="fa-solid fa-user"></i>
             </a>
+            <button id="theme-toggle">Toggle Theme</button>
             <h2>My Cart</h2>
             <a href="cart.html">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -87,7 +88,36 @@
                 </ul>
             </nav>
         <main>
+
+            <div id="page-header">
+                <h3>This is your shopping cart</h3>
+                <p>Here you will find the games you chose form the store</p>
+            </div>
+
+            <hr color="#555">
             
+            <div id="main-layout">
+
+                <div id="cart-section">
+                    <h2>Your Cart</h2>
+
+                    <div id="cart-box">
+                        <p id="empty-message">Your cart is empty</p>
+                        <ul id="cart-list"></ul>
+                    </div>
+
+                    <div id="total-box">
+                        <span id="total-label">Total Price:</span>
+                        <span id="total-price">$0</span>
+                    </div>
+
+                    <button id="clear-btn" onclick="clearCart()">Clear Cart</button>
+                    <button id="buy-btn" onclick="checkout()">buy & add to library</button>
+                </div>
+
+            </div>
+
+    
         </main>
     </div>
     <footer>
@@ -95,5 +125,8 @@
         &copy;2026 FCAI-Capital university. <br>
         electronics game website. All rights reserved.
     </footer>
+    <script src="database.js"></script>
+    <script src="cart.js"></script>
+    <script src="global.js"></script>
 </body>
 </html>
