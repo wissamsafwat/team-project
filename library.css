@@ -13,6 +13,11 @@
     font-size: large;
     border: 2px solid var(--hover-icon);
 }
+#search:focus{
+    outline: none;
+    border: 2px solid var(--hover-icon);
+    box-shadow: 0 2px 20px var(--hover-icon);
+}
 .cards_container , .fav_cards_container{
     display: flex;
     justify-content: center;
