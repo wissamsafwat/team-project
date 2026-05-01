@@ -10,7 +10,7 @@
 #profile_pic h3{
     margin-left: 50px;
 }
-.fa-user {
+#pic{
   display: block;
   font-size: 170px;  
   margin-bottom: 20px; /* space between icon and form */
@@ -28,39 +28,41 @@ h3{
   font-size: large;
   
 }
-.buttons{
+button {
     flex: 1;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     border: none;
-    transition: 0.2s;   
+    transition: 0.2s;
+     
 }
 
 #logout{
-    color:var(--text-color);
-    background-color:var(--hover-icon);
+    color:white;
+    background-color:tomato; 
+   
 }
 
 #logout:hover{
-    background-color:var(--darker);
+    background-color:rgb(236, 74, 46);
     transform: translateY(-5px);
 }
 #change-email{
-    color:var(--text-color);
-    background-color:var(--hover-icon); 
+    color:white;
+    background-color:tomato; 
 }
 #change-email:hover{
-    background-color:var(--darker);
+    background-color:rgb(236, 74, 46);
     transform: translateY(-5px);
 }
 #change-password{
-   color:var(--text-color);
-   background-color:var(--hover-icon); 
+   color:white;
+   background-color:tomato; 
 }
 #change-password:hover{
-    background-color:var(--darker);
+    background-color:rgb(236, 74, 46);
     transform: translateY(-5px); 
 }
 input, select {
@@ -77,31 +79,22 @@ input, select {
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e ;
-    color:var(--color);
+    color:#fff;
 }
 #email{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:var(--color);
+    color:#fff;
 }
 #password{
     border-radius:6px;
     width:70%;
     border: 15px solid #0e0e0e;
-    color:var(--color);
+    color:#fff;
 }
 p{
-    color: var(--text-color);
+    color: #fff;
     background-color: #0e0e0e;
     font-size:small;
-}
-#icon_1{
-    color:var(--icon-color);
-}
-#status{
-    color: var(--text-color);
-}
-.h3_3{
-    color: var(--text-color);
 }
