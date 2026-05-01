@@ -6,7 +6,7 @@
     <title>game website-community</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="page-name.css">
+    <link rel="stylesheet" href="community.css">
 </head>
 <body>
     <header>
@@ -14,6 +14,9 @@
             <a href="profile.html">
                 <i class="fa-solid fa-user"></i>
             </a>
+
+             <button id="theme-toggle">Toggle Theme</button>
+
             <h2>Community</h2>
             <a href="cart.html">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -87,7 +90,26 @@
                 </ul>
             </nav>
         <main>
-            
+            <section>
+                <h2>welcome to the community</h2>
+                <p>discuss games , write reviews and comments and much more!</p>
+            </section>
+
+            <hr color="#555">
+
+            <div id="chatbox">
+                <div id="msg_area">
+
+                </div>
+
+                <hr color="#555">
+
+                <div id="text_input">
+                    <input type="text" placeholder="type your text here" id="text">
+                    <button id="send_btn">send</button>
+                </div>
+
+            </div>
         </main>
     </div>
     <footer>
@@ -95,5 +117,7 @@
         &copy;2026 FCAI-Capital university. <br>
         electronics game website. All rights reserved.
     </footer>
+    <script src="global.js"></script>
+    <script src="community.js"></script>
 </body>
 </html>
