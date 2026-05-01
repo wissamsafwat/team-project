@@ -146,6 +146,8 @@ header a i{
     padding: 10px 2px;
 }
 main{
+    flex: 1;
+    width: 100%;
     padding: 20px;
     color: var(--text-color);
 }

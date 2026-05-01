@@ -14,6 +14,7 @@
             <a href="profile.html">
                 <i class="fa-solid fa-user"></i>
             </a>
+            <button id="theme-toggle">Toggle Theme</button>
             <h2>Profile</h2>
             <a href="cart.html">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -88,7 +89,7 @@
             </nav>
         <main>
             <section id="profile_pic">
-                <i class="fa-solid fa-user" id="pic"></i>
+                <i class="fa-solid fa-user" id="icon_1"></i>
                 <div>
                     <h3 id="status">
                         <pre><strong>Status:</strong> online    <strong>birthdate:</strong> dd/mm/yyyy</pre> 
@@ -101,21 +102,21 @@
 
             <hr color="#555">
 
-            <h3><strong>Gamer Tag:</strong></h3>
+            <h3 class="h3_3"><strong>Gamer Tag:</strong></h3>
             <p id ="gamer-tag"></p>
 
-            <h3><strong>Email:</strong></h3>
+            <h3 class="h3_3"><strong>Email:</strong></h3>
             <p id="email"></p>
 
-            <button id="change-email">Change Email</button>
+            <button id="change-email" class="buttons">Change Email</button>
 
-            <h3><strong>Password:</strong></h3>
+            <h3 class="h3_3"><strong>Password:</strong></h3>
             <p id="password"></p>
 
-            <button id="change-password">Change Password</button>
+            <button id="change-password" class="buttons">Change Password</button>
 
             
-            <h3><strong>Server:</strong></h3>
+            <h3 class="h3_3"><strong>Server:</strong></h3>
             <select>
                 <option value="me"> Middle East</option>
                 <option value="eu"> Europe (EU)</option>
@@ -123,7 +124,7 @@
                 <option value="asia">Asia</option>
             </select>
             <div>
-                <button id="logout">Log Out</button>
+                <button id="logout" class="buttons">Log Out</button>
             </div>
         </main>
     </div>
@@ -133,5 +134,6 @@
         electronics game website. All rights reserved.
     </footer>
     <script src="profilejava.js"></script>
+    <script src="global.js"></script>
 </body>
 </html>
