@@ -92,7 +92,7 @@
                 <i class="fa-solid fa-user" id="icon_1"></i>
                 <div>
                     <h3 id="status">
-                        <pre><strong>Status:</strong> online    <strong>birthdate:</strong> dd/mm/yyyy</pre> 
+                        <pre><strong>Status:</strong> online    <strong>birthdate:</strong><span id="profile_dob"></span></pre> 
                     </h3>
                         
                 </div>
@@ -117,14 +117,47 @@
 
             
             <h3 class="h3_3"><strong>Server:</strong></h3>
-            <select>
-                <option value="me"> Middle East</option>
-                <option value="eu"> Europe (EU)</option>
-                <option value="na">🇺🇸 North America (NA)</option>
-                <option value="asia">Asia</option>
-            </select>
+            
+            <p>
+                <strong>Current Region:</strong> 
+                <span id="current-server" style="color: #4CAF50;">Not Selected</span>
+            </p>
+
+           
+            <img src="images/WORLDMAP.jpg" alt="Select Server" usemap="#server_map" style="max-width: 100%; height: auto; border-radius: 10px; border: 2px solid var(--hover-icon);">
+            
+            <map name="server_map">
+
+                <area shape="poly" 
+                    coords="142,19,104,40,59,43,23,60,76,182,145,217,176,156,218,114,262,94,267,25,224,11,195,7" 
+                    href="#" 
+                    onclick="saveServer(event, 'North America (NA)')" 
+                    alt="North America" 
+                    title="Select North America (NA)">
+
+                <area shape="poly" 
+                    coords="353,155,315,79,242,155,295,160" 
+                    href="#" 
+                    onclick="saveServer(event, 'Europe (EU)')" 
+                    alt="Europe" 
+                    title="Select Europe (EU)">
+
+                <area shape="poly" 
+                    coords="353,202,380,188,354,161,323,168,266,162,258,182,280,191" 
+                    href="#" 
+                    onclick="saveServer(event, 'Middle East (ME)')" 
+                    alt="Middle East" 
+                    title="Select Middle East (ME)">
+
+                <area shape="poly" 
+                    coords="455,240,431,195,415,222,374,168,342,76,396,22,472,29,542,37,526,115,495,177,553,241,495,241" 
+                    href="#" 
+                    onclick="saveServer(event, 'Asia Pacific (APAC)')" 
+                    alt="Asia" 
+                    title="Select Asia Pacific (APAC)">
+            </map>
             <div>
-                <button id="logout" class="buttons"><a href="index.html">Log Out</a></button>
+                <button id="logout" class="buttons">Log Out</button>
             </div>
         </main>
     </div>

@@ -55,10 +55,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     background-color:var(--background-color);
-}
-.submit a{
-    text-decoration: none;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 .submit:hover{
     border-color:var(--hover-icon);
