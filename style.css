@@ -7,7 +7,7 @@
     --nav-color:#0e0e0e;
     --hover-nav:tomato;
     --button-color:#0e0e0e;
-    --secondry-color:#0e0e0e;
+    --secondary-color:#0e0e0e;
     --person-card:rgb(116, 118, 122);
     --darker:rgb(236, 74, 46);
     --color:white;
@@ -20,41 +20,12 @@ body.light,body.specs-table-container{
     --nav-color:#4879ff;
     --hover-nav:#1a1a1a;
     --button-color:white;
-    --secondry-color:#0e0e0e;
-    --person-card:#0e0e0e;
+    --secondary-color:#0e0e0e;
+    --person-card:#56596a;
     --darker:#3a61cc;
     --color:white;
-    overflow-x: hidden;
 }
-body.light #navigation hr{
-    display: none;
-}
-body.light #navigation{
-    width: 100%;
-    height: 60px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    flex-direction: row;
-    width: 100%;
-    height: 60px;
-    border-radius: 15px;
-    padding: 0 20px;
-    z-index: 1000;
-}
-body.light #global{
-    flex-direction: column;
-}
-body.light #navigation ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-body.light #navigation a{
-    padding: 10px; 
-    text-align: center;
-}
+
 body.dark,body.specs-table-container{
     --background-color:#1a1a1a;
     --hover-icon:tomato;
@@ -67,6 +38,17 @@ body.dark,body.specs-table-container{
     --person-card:rgb(116, 118, 122);
     --darker:rgb(236, 74, 46);
     --color:white;
+}
+.card h3{
+    color: white;
+}
+
+.card p{
+    color: black;
+}
+
+.card a{
+    color: tomato;
 }
 body{
     display: flex;
@@ -135,11 +117,11 @@ header a i{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-body.dark #navigation:hover{
+#navigation:hover{
     width: 200px;
     box-shadow: 0px 2px 20px var(--hover-nav);
 }
- #navigation ul{
+#navigation ul{
     list-style-type: none;
     width: 100%;
     list-style: none;
@@ -164,12 +146,12 @@ body.dark #navigation:hover{
     text-align: center;
     font-size: 17px;
 }
-body.dark #navigation a span{
+#navigation a span{
     margin-left: 10px;
     opacity: 0;
     transition: 0.3s;
 }
-body.dark #navigation:hover a span{
+#navigation:hover a span{
     opacity: 1;
 }
 #navigation ul li{
