@@ -69,15 +69,15 @@ body.dark,body.specs-table-container{
     --darker:rgb(236, 74, 46);
     --color:white;
 }
-.card h3{
+.profile_card h3{
     color: white;
 }
 
-.card p{
+.profile_card p{
     color: black;
 }
 
-.card a{
+.profile_card a{
     color: tomato;
 }
 body{
