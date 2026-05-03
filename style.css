@@ -12,7 +12,7 @@
     --darker:rgb(236, 74, 46);
     --color:white;
 }
-body.light,body.specs-table-containerg{
+body.light,body.specs-table-container{
     --background-color:white;
     --hover-icon:#4879ff;
     --text-color:#1a1a1a;
