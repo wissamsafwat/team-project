@@ -28,9 +28,11 @@ function sendMessage() {
     }
 
     let messages = JSON.parse(localStorage.getItem("chatMessages")) || [];
+    const user = localStorage.getItem("currentUser") || "guest";
 
     // Add the new message object
     messages.push({
+        sender: user,
         text: messageText,
         // Adding time stamp
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) 
@@ -66,7 +68,7 @@ function loadMessages() {
         bubble.style.maxWidth = "80%";
         
         bubble.innerHTML = `
-            <strong>Wissam:</strong> ${msg.text} 
+            <strong>${msg.sender}:</strong> ${msg.text} 
             <span style="font-size: 11px; color: #ffd1c9; margin-left: 10px;">${msg.time}</span>
         `;
         

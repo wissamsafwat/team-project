@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>Player Account</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="home.html">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body"> <div class="login-container">
-    <button id="theme-toggle">Toggle Theme</button>
+<body class="login-body"> 
+    <div class="login-container">
+        <button id="theme-toggle">Toggle Theme</button>
         <h2>Create a New Account</h2>
-        <form id="playerForm">
-            <input type="text" placeholder="Gamer Tag" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <input type="date" min="1900-01-01" max="2026-12-31" placeholder="Birth Date" required>
-            <button type="submit" class="submit"><a href="home.html">Submit</a></button>
+        <form id="signup_form">
+            <input type="text" placeholder="Gamer Tag" id="new_user">
+            <input type="email" placeholder="Email" id="new_email">
+            <input type="password" placeholder="Password" id="new_pass">
+            <input type="password" placeholder="Confirm Password" id="con_pass">
+            <input type="date" min="1900-01-01" max="2026-12-31" placeholder="Birth Date" id="dob">
+            <button type="submit" class="submit">Submit</button>
         </form>
     </div>
 <script src="global.js"></script>
+<script src="accounts.js"></script>
 </body>
 </html>
