@@ -12,7 +12,7 @@
     --darker:rgb(236, 74, 46);
     --color:white;
 }
-body.light,body.specs-table-container{
+body.light,body.specs-table-containerg{
     --background-color:white;
     --hover-icon:#4879ff;
     --text-color:#1a1a1a;
@@ -24,6 +24,36 @@ body.light,body.specs-table-container{
     --person-card:#0e0e0e;
     --darker:#3a61cc;
     --color:white;
+    overflow-x: hidden;
+}
+body.light #navigation hr{
+    display: none;
+}
+body.light #navigation{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 0 20px;
+    z-index: 1000;
+}
+body.light #global{
+    flex-direction: column;
+}
+body.light #navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+body.light #navigation a{
+    padding: 10px; 
+    text-align: center;
 }
 body.dark,body.specs-table-container{
     --background-color:#1a1a1a;
@@ -105,11 +135,11 @@ header a i{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#navigation:hover{
+body.dark #navigation:hover{
     width: 200px;
     box-shadow: 0px 2px 20px var(--hover-nav);
 }
-#navigation ul{
+ #navigation ul{
     list-style-type: none;
     width: 100%;
     list-style: none;
@@ -134,12 +164,12 @@ header a i{
     text-align: center;
     font-size: 17px;
 }
-#navigation a span{
+body.dark #navigation a span{
     margin-left: 10px;
     opacity: 0;
     transition: 0.3s;
 }
-#navigation:hover a span{
+body.dark #navigation:hover a span{
     opacity: 1;
 }
 #navigation ul li{

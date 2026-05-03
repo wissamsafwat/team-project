@@ -37,7 +37,10 @@ h3{
     border: none;
     transition: 0.2s;   
 }
-
+.buttons a{
+    text-decoration: none;
+    color: var(--text-color);
+}
 #logout{
     color:var(--text-color);
     background-color:var(--hover-icon);

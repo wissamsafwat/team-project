@@ -2,147 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game website-home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <section id="head">
-            <a href="profile.html">
-                <i class="fa-solid fa-user"></i>
-            </a>
-            <button id="theme-toggle">Toggle Theme</button>
-            <h2>Home</h2>
-            <a href="cart.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-        </section>
-        <hr color="#555">
-    </header>
-    <div id="global">
-        <nav id="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="my_library.html">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span>My Library</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="store.html">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span>Store</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="compare.html">
-                        <i class="fa-solid fa-right-left"></i>
-                        <span>Compare</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="community.html">
-                        <i class="fa-solid fa-users"></i>
-                        <span>Community</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="support.html">
-                        <i class="fa-solid fa-headset"></i>
-                        <span>Support</span>
-                    </a>
-                </li>
-
-                <hr color="#555">
-
-                <li>
-                    <a href="about_team.html">
-                        <i class="fa-solid fa-address-card"></i>
-                        <span>About Team</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <section class="hero">
-                <h1>Welcome to GameHub</h1>
-                <p>
-                    Your go-to platform for discovering and exploring electronic games.
-                    Enjoy a clean design, smooth experience, and find your favorite games.
-                </p>
-                <video controls width="600" poster="images.jpg">
-                    <source src="video5830377834706639866.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </section>
-            <section class="about">
-                <section class="about">
-                    <h1>About GameHub</h1>
-
-                    <p>
-                        GameHub is your ultimate destination for discovering and exploring the best electronic games.
-                        Our platform is designed to provide a smooth and enjoyable experience for gamers of all levels.
-                    </p>
-
-                    <p>
-                        We aim to bring together a wide collection of games, detailed comparisons, and an easy-to-use
-                        interface
-                        to help you find the perfect game quickly.
-                    </p>
-
-                    <p>
-                        Whether you're looking for action, adventure, or strategy games, GameHub has something for
-                        everyone.
-                    </p>
-
-                    <h2>Our Mission</h2>
-                    <p>
-                        Our mission is to make gaming discovery simple, fast, and fun.
-                    </p>
-
-                    <h2>Why Choose Us?</h2>
-                    <ul>
-                        <li>🎮 Wide range of games</li>
-                        <li>⚡ Fast and clean design</li>
-                        <li>🌙 Dark mode support</li>
-                        <li>🔍 Easy comparison tools</li>
-                    </ul>
-                </section>
-            </section>
-        </main>
+<body class="login-body">
+    <div class="login-container">
+        <button id="theme-toggle">Toggle Theme</button>
+        <h2>Welcome to GameHub</h2>
+        <form id="playerForm">
+            <button class="login"><a href="login.html">Log in</a></button>
+            <button class="signup"><a href="signup.html">Sign Up</a></button>
+        </form>
     </div>
-    <footer>
-        <hr color="#555">
-        &copy;2026 FCAI-Capital university. <br>
-        electronics game website. All rights reserved.
-    </footer>
     <script src="global.js"></script>
 </body>
-
 </html>

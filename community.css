@@ -50,6 +50,8 @@ section{
     border: 2px solid var(--hover-icon);
     border-radius: 30px;
     font-weight: bolder;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 #text:focus{
     box-shadow: 0 2px 20px var(--hover-icon);
@@ -60,8 +62,10 @@ section{
     font-size: larger;
 }
 #send_btn{
-   
+    border-color: var(--hover-icon);
+    background-color: var(--background-color);
     border-radius: 30px;
+    color: var(--text-color);
 }
 #send_btn:hover{
     box-shadow: 0 2px 20px var(--hover-icon);
