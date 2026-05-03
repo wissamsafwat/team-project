@@ -21,10 +21,10 @@ body.light,body.specs-table-container{
     --hover-nav:#1a1a1a;
     --button-color:white;
     --secondry-color:#0e0e0e;
-    --person-card:#0e0e0e;
+    --person-card:#56596a;
     --darker:#3a61cc;
     --color:white;
-    overflow-x: hidden;
+        overflow-x: hidden;
 }
 body.light #navigation hr{
     display: none;
@@ -55,6 +55,7 @@ body.light #navigation a{
     padding: 10px; 
     text-align: center;
 }
+
 body.dark,body.specs-table-container{
     --background-color:#1a1a1a;
     --hover-icon:tomato;
@@ -67,6 +68,17 @@ body.dark,body.specs-table-container{
     --person-card:rgb(116, 118, 122);
     --darker:rgb(236, 74, 46);
     --color:white;
+}
+.profile_card h3{
+    color: white;
+}
+
+.profile_card p{
+    color: black;
+}
+
+.profile_card a{
+    color: tomato;
 }
 body{
     display: flex;
@@ -139,7 +151,7 @@ body.dark #navigation:hover{
     width: 200px;
     box-shadow: 0px 2px 20px var(--hover-nav);
 }
- #navigation ul{
+#navigation ul{
     list-style-type: none;
     width: 100%;
     list-style: none;
