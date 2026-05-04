@@ -58,6 +58,7 @@ function fillData(game, col) {
     document.getElementById(`price-game-${col}`).textContent = game.price;
     document.getElementById(`rating-game-${col}`).textContent = game.rating;
     document.getElementById(`req-game-${col}`).textContent = game.req;
+    document.getElementById(`rec-game-${col}`).textContent = game.req_rec;
     document.getElementById(`storage-game-${col}`).textContent = game.storage;
 }
 

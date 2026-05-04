@@ -2,6 +2,19 @@ document.addEventListener("DOMContentLoaded", function(){
     const loginForm = document.getElementById("login_form");
     const signupForm = document.getElementById("signup_form");
 
+    function showError(formElement, message) {
+        let existingError = formElement.querySelector(".error-msg");
+        if(existingError) existingError.remove();
+
+        const errorEl = document.createElement("p");
+        errorEl.className = "error-msg";
+        errorEl.style.color = "tomato"; 
+        errorEl.style.fontWeight = "bold";
+        errorEl.style.marginTop = "10px";
+        errorEl.textContent = message;
+        
+        formElement.insertBefore(errorEl, formElement.querySelector("button"));
+    }
 
     /// signup logic
     if(signupForm){
@@ -14,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function(){
             const confirmPass = document.getElementById("con_pass").value;
             const birthDate = document.getElementById("dob").value;
 
-            if (user == "" || email == "" || password == "" || confirmPass == "" || birthDate == ""){
-                alert("please fill out all feilds to create an account");
+            if (user === "" || email === "" || password === "" || confirmPass === "" || birthDate === ""){
+                showError(signupForm, "Please fill out all fields to create an account.");
                 return ;
             }
 
-            if(password != confirmPass){
-                alert("the passwords dont match please try agian");
+            if(password !== confirmPass){
+                showError(signupForm, "The passwords do not match. Please try again.");
                 return;
             }
 
@@ -29,19 +42,18 @@ document.addEventListener("DOMContentLoaded", function(){
             /// check if the gamer tag is available 
             const takenUser = usersDB.find(u => u.username.toLowerCase() === user.toLowerCase());
             if(takenUser){
-                alert("the gamer tag is used , please choose another one");
+                showError(signupForm, "This gamer tag is used, please choose another one.");
                 return;
             }
+            
             const newUser = {username: user , email: email , password: password , dob: birthDate};
             usersDB.push(newUser);
             localStorage.setItem("users", JSON.stringify(usersDB));
             
             localStorage.setItem("currentUser" ,user);
-            alert("account created , welcome to gamehub!");
             window.location.href = "home.html";
         });
     }
-
 
     /// login logic
     if(loginForm){
@@ -50,10 +62,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
             const user = document.getElementById("user").value.trim();
             const pass = document.getElementById("pass").value;
-            if(user == "" || pass == ""){
-                alert("please enter your data to continue");
+            
+            if(user === "" || pass === ""){
+                showError(loginForm, "Please enter your data to continue.");
                 return;
             }
+            
             let usersDB = JSON.parse(localStorage.getItem("users")) || [];
 
             const validUser = usersDB.find(u => u.username.toLowerCase() === user.toLowerCase() && u.password === pass);
@@ -62,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 window.location.href = "home.html";
             }
             else{
-                alert("invalid gamertag or password , please try agian");
+                showError(loginForm, "Invalid gamertag or password, please try again.");
             }
         });
     }

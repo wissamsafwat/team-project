@@ -137,3 +137,26 @@ display:block;
     justify-content: center;
     display: flex;
 }
+.compare-table table {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+}
+
+.compare-table table td {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #333;
+    text-align: left; 
+    font-size: 14px;
+}
+
+.compare-table table tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-table table tr:first-child td:first-child {
+    width: 30%;
+}

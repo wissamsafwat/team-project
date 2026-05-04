@@ -79,3 +79,11 @@ function addToCart(gameId) {
         alert(`${exactGame.name} added to cart!`);
     }
 }
+/// list and grid views
+function setGridView() {
+    document.querySelector('.card-container').classList.remove('list-view');
+}
+
+function setListView() {
+    document.querySelector('.card-container').classList.add('list-view');
+}
