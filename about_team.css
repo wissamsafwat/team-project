@@ -1,8 +1,12 @@
-main > img{
-    display: block;
-    margin: auto;
+#welcome_pic{
+    text-align: center; 
+    margin: 20px auto;
 }
-
+figcaption{
+    color: var(--text-color); 
+    font-style: italic; 
+    margin-top: 10px;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
