@@ -31,35 +31,35 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 10px;
+    color: var(--text-color);
 }
 .login-container input {
     display: block;
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    background: #1a1a1a;
+    background:var(--background-color);
     border: 1px solid #444;
     border-radius: 10px;
-    color: white;
+    color:var(--text-color);
     font-size: 16px;
     outline: none;
 }
 
 .login-container input:focus {
-    border-color: tomato;
+    border-color: var(--hover-icon);
 }
 .submit{
     padding: 10px;
     width: 50%;
     border-radius: 15px;
     cursor: pointer;
-    background-color: #1a1a1a;
-    color:white;
-}
-.submit a{
-    text-decoration: none;
-    color: aliceblue;
+    background-color:var(--background-color);
+    color: var(--text-color);
 }
 .submit:hover{
-    border-color: #ff6347;
+    border-color: var(--hover-icon);
+}
+#date_of_birth{
+    text-align: left;
 }
