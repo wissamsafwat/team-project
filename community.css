@@ -30,16 +30,25 @@ section{
 }
 #msg_area{
     flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    height: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
 }
 #text_input{
     background-color: var(--background-color);
     display: flex;
     flex: row;
+    flex-shrink: 0;
+    gap: 10px;
     margin-left: 2px;
     margin-right: 20px;
     height: 60px;
     margin-bottom: 20px;
     margin-top: -12px;
+    border-top: 3px solid #555;
+    padding-top: 20px;
 }
 #text{
     outline: none;
@@ -52,6 +61,7 @@ section{
     font-weight: bolder;
     background-color: var(--background-color);
     color: var(--text-color);
+
 }
 #text:focus{
     box-shadow: 0 2px 20px var(--hover-icon);
