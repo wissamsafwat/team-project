@@ -1,25 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Player Account</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="login-body"> 
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="login-body">
     <div class="login-container">
+
+      <div style="text-align: center">
         <button id="theme-toggle">Toggle Theme</button>
-        <h2>Create a New Account</h2>
-        <form id="signup_form">
-            <input type="text" placeholder="Gamer Tag" id="new_user">
-            <input type="email" placeholder="Email" id="new_email">
-            <input type="password" placeholder="Password" id="new_pass">
-            <input type="password" placeholder="Confirm Password" id="con_pass">
-            <input type="date" min="1900-01-01" max="2026-12-31" placeholder="Birth Date" id="dob">
-            <button type="submit" class="submit">Submit</button>
-        </form>
+      </div>
+      
+      <h2 style="text-align: center">Create a New Account</h2>
+      <form id="signup_form">
+        <label class="inp-label" for="new_user">Gamer Tag</label>
+        <input type="text" placeholder="Gamer Tag" id="new_user" />
+
+        <label class="inp-label" for="new_email">Email</label>
+        <input type="email" placeholder="Email" id="new_email" />
+
+        <label class="inp-label" for="new_pass">Password</label>
+        <input type="password" placeholder="Password" id="new_pass" />
+
+        <label class="inp-label" for="con_pass">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="con_pass" />
+
+        <label class="inp-label" for="dob">Birth Date</label>
+        <input
+          type="date"
+          min="1955-01-01"
+          max="2016-01-01"
+          placeholder="Birth Date"
+          id="dob"
+        />
+        <button type="submit" class="submit">Submit</button>
+      </form>
     </div>
-<script src="global.js"></script>
-<script src="accounts.js"></script>
-</body>
+    <script src="global.js"></script>
+    <script src="accounts.js"></script>
+  </body>
 </html>

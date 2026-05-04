@@ -66,6 +66,7 @@ function loadMessages() {
         bubble.style.marginBottom = "10px";
         bubble.style.width = "fit-content";
         bubble.style.maxWidth = "80%";
+        bubble.style.wordWrap = "break-word";
         
         bubble.innerHTML = `
             <strong>${msg.sender}:</strong> ${msg.text} 
