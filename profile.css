@@ -94,6 +94,12 @@ input, select {
     border: 15px solid #0e0e0e;
     color:var(--color);
 }
+#region_p{
+    border-radius:6px;
+    width:67%;
+    border: 15px solid #0e0e0e;
+    color:var(--color);
+}
 p{
     color: var(--text-color);
     background-color: #0e0e0e;

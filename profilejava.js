@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
+     /// profile styling
     displayUser();
 });
 // saving the server selection
