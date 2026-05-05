@@ -78,19 +78,19 @@ input, select {
 }
 #gamer-tag{
     border-radius:6px;
-    width:70%;
+    width:67%;
     border: 15px solid #0e0e0e ;
     color:var(--color);
 }
 #email{
     border-radius:6px;
-    width:70%;
+    width:67%;
     border: 15px solid #0e0e0e;
     color:var(--color);
 }
 #password{
     border-radius:6px;
-    width:70%;
+    width:67%;
     border: 15px solid #0e0e0e;
     color:var(--color);
 }
