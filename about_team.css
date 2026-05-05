@@ -56,3 +56,9 @@ figcaption{
     color:var(--hover-icon);
     text-decoration: none;
 }
+.premium_tm8{
+    border: 3px solid gold;
+}
+.premium_tm8:hover{
+    box-shadow: 0 2px 20px goldenrod;
+}
